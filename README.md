@@ -92,7 +92,7 @@ Before running this project, make sure you have the following installed:
 
 ---
 
-🧠 Java Concepts & DSA Used
+🧠 **Java Concepts & SQL Used**
 
 💡 Concept
 
