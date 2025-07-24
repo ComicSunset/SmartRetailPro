@@ -2,7 +2,7 @@
 
 # 🛒 SmartRetailPro – The Smart Way to Retail!
 
-Welcome to **SmartRetailPro** – a powerful and intelligent 💡 Java + MySQL-based console application that transforms how small businesses handle employees, inventory, customer billing, and stock verification – all in one seamless flow! ⚙️📊
+Welcome to **SmartRetailPro** – a powerful and intelligent 💡 Java + MySQL or Oracle PL/SQL-based console application that transforms how small businesses handle employees, inventory, customer billing, and stock verification – all in one seamless flow! ⚙️📊
 
 ---
 
@@ -42,9 +42,14 @@ Your database is called `shopdb` and consists of the following tables:
 ## ⚙️ Installation & Setup
 
 ### ✅ Prerequisites:
-- Java (JDK 8+)
-- MySQL installed and running
-- `mysql-connector-java-<version>.jar` in your classpath
+
+Before running this project, make sure you have the following installed:
+
+- ☕ **Java JDK (v21 or above)** – for compiling and running the application
+- 🐬 **MySQL Server** – for database backend
+- 🧠 **Oracle 23ai** *(optional)* – for advanced analytics/integration
+- 🐳 **Docker** *(optional)* – to containerize and run your app/db environment
+- 💡 **MySQL Connector/J** – JDBC driver to connect Java with MySQL
 
 ## 🌟 Why SmartRetailPro?
 🔹 Easy to use
