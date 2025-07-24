@@ -8,13 +8,13 @@ Welcome to **SmartRetailPro** – a powerful and intelligent 💡 Java + MySQL o
 
 ## ✨ Highlights
 
-👨‍💼 **Employee Module**
+👨‍💼 ***Employee Module***
 
 ➕ Add new employees with ID, name, address, and phone
 
 🔍 View list of all employees in tabular format
 
-📦 Inventory (Item) Module
+📦 ***Inventory (Item) Module***
 
 ➕ Add new items with name, expiry date, price, and quantity
 
@@ -22,9 +22,9 @@ Welcome to **SmartRetailPro** – a powerful and intelligent 💡 Java + MySQL o
 
 🚨 Shows low stock alerts if quantity falls below threshold
 
-🧾 Customer Billing Module
+🧾 ***Customer Billing Module***
 
-🟢 Mode 1: Manual Purchase Entry
+🟢 **Mode 1**: Manual Purchase Entry
 Takes customer name & mobile once
 
 Allows adding multiple items with quantity
@@ -37,14 +37,14 @@ Shows remaining stock and alerts if low
 
 Prompts for payment mode (Cash/Card/PhonePe)
 
-🔵 Mode 2: Customer List Purchase
+🔵** Mode 2**: Customer List Purchase
 Accepts predefined item list from customer
 
 Validates available stock automatically
 
 Calculates total bill & updates DB in background
 
-📈 Customer Spend Tracker
+📈 ***Customer Spend Tracker****
 View full table of customers with:
 
 👤 Name
