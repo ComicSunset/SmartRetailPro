@@ -22,7 +22,7 @@ Welcome to **SmartRetailPro** – a powerful and intelligent 💡 Java + MySQL-b
 | 🔧 Tech         | ⚡ Description             |
 |-----------------|----------------------------|
 | `Java`          | Backend logic using JDBC + OOP |
-| `MySQL`         | Relational DB for all data |
+| `MySQL/Oracle PL/sql`         | Relational DB for all data |
 | `JDBC`          | Java Database Connectivity |
 | `Scanner`       | CLI input from the user    |
 
