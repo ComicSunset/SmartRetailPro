@@ -8,13 +8,52 @@ Welcome to **SmartRetailPro** – a powerful and intelligent 💡 Java + MySQL o
 
 ## ✨ Highlights
 
-🧑‍💼 **Employee Management** – Add/View store employees and their details  
-📦 **Inventory Management** – Add items with name, expiry date, price, quantity, and live stock status (In Stock / Out of Stock)  
-🧑‍🛍️ **Customer Billing** – Supports multi-item billing for a single customer in one go  
-🧾 **Bill Generation** – Displays itemized bill, totals, and payment mode  
-⚠️ **Smart Verification** – Real-time mismatch alerts between items selected and billed  
-💰 **Flexible Payment** – Accepts Cash 💵 / Card 💳 / PhonePe 📱 with a Thank You message  
+👨‍💼 Employee Module
 
+➕ Add new employees with ID, name, address, and phone
+
+🔍 View list of all employees in tabular format
+
+📦 Inventory (Item) Module
+
+➕ Add new items with name, expiry date, price, and quantity
+
+📊 Tracks quantity and automatically updates stock status (IN STOCK or OUT)
+
+🚨 Shows low stock alerts if quantity falls below threshold
+
+🧾 Customer Billing Module
+
+🟢 Mode 1: Manual Purchase Entry
+Takes customer name & mobile once
+
+Allows adding multiple items with quantity
+
+Validates stock and updates remaining quantity
+
+Shows bill summary with item-wise cost
+
+Shows remaining stock and alerts if low
+
+Prompts for payment mode (Cash/Card/PhonePe)
+
+🔵 Mode 2: Customer List Purchase
+Accepts predefined item list from customer
+
+Validates available stock automatically
+
+Calculates total bill & updates DB in background
+
+📈 Customer Spend Tracker
+View full table of customers with:
+
+👤 Name
+
+📱 Mobile number
+
+💰 Total amount spent across purchases
+
+ 
 ---
 
 ## 🛠️ Tech Stack
@@ -51,14 +90,41 @@ Before running this project, make sure you have the following installed:
 - 🐳 **Docker** *(optional)* – to containerize and run your app/db environment
 - 💡 **MySQL Connector/J** – JDBC driver to connect Java with MySQL
 
+---
+
+🧠 Java Concepts & DSA Used
+
+💡 Concept
+
+OOP (Methods/Classes) --->>	Modular code structure
+
+JDBC API	--->> Database operations
+
+Collection Framework	--->> Billing and summary storage
+
+Conditional Statements --->>	 Stock checks, status flags
+
+Loops	--->> Menu handling, multiple item input
+
+SQL Joins & Aggregations --->> Customer total spend analytics
+
+Exception Handling	--->> Runtime safety
+
+Static & Final --->> Constants and single Scanner instance
+
 ## 🌟 Why SmartRetailPro?
-🔹 Easy to use
 
-🔹 Full retail flow: stock → sale → bill
+⚡ Superfast CLI interface for real-time billing
 
-🔹 Works offline
+🔄 Two billing methods for flexibility
 
-🔹 Ready to integrate with future GUI or Web UI
+🔍 Intelligent stock monitoring
+
+🧾 Clean and detailed bill generation
+
+💰 Tracks lifetime spending per customer
+
+🎯 Resume-friendly and recruiter-attracting
 
 ## 📌 Future Scope
 
