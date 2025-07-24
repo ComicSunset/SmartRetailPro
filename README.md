@@ -8,7 +8,7 @@ Welcome to **SmartRetailPro** – a powerful and intelligent 💡 Java + MySQL o
 
 ## ✨ Highlights
 
-👨‍💼 Employee Module
+👨‍💼 **Employee Module**
 
 ➕ Add new employees with ID, name, address, and phone
 
