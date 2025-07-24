@@ -1,4 +1,4 @@
-## SmartRetailPro
+## SmartRetailPro – “Modern Retail, Classic Simplicity” 🛒📘
 
 # 🛒 SmartRetailPro – The Smart Way to Retail!
 
