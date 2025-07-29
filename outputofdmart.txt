@@ -1,0 +1,717 @@
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 1,JAI,VZM,1234
+java.util.InputMismatchException
+        at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+        at java.base/java.util.Scanner.next(Scanner.java:1619)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
+        at SmartRetailPro.employeeModule(SmartRetailPro.java:59)
+        at SmartRetailPro.main(SmartRetailPro.java:31)
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 100
+JAI
+VZM
+1234
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 101
+BOBBY
+VZM
+1212
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+2
+ID      Name    Address Phone
+100     JAI     VZM     1234
+101     BOBBY   VZM     1212
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 102
+HASWANTH
+VZM
+121212
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 103
+BHARATH
+SKLM
+39273
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 104
+RATHAN
+AKP
+362799
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 105
+HARSHA
+VSKP
+335336
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 106
+RAHUL
+VSKP
+886869
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 107
+DEVARA
+TGP
+9748733
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 108
+RITHEESH
+SKLM
+2625353
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 109
+ABHISHEK
+UK
+76336
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 110
+MOHITH
+TGP
+2332344
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+1
+Enter ID, Name, Address, Phone: 111
+BHANU
+BHEEMLI
+959659
+? Employee added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+2
+ID      Name    Address Phone
+100     JAI     VZM     1234
+101     BOBBY   VZM     1212
+102     HASWANTH        VZM     121212
+103     BHARATH SKLM    39273
+104     RATHAN  AKP     362799
+105     HARSHA  VSKP    335336
+106     RAHUL   VSKP    886869
+107     DEVARA  TGP     9748733
+108     RITHEESH        SKLM    2625353
+109     ABHISHEK        UK      76336
+110     MOHITH  TGP     2332344
+111     BHANU   BHEEMLI 959659
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 2
+1. Add Item | 2. View Items
+1
+Enter ID, Name, Expiry(YYYY-MM-DD), Stock_Status, Price: 1
+APPLE
+2025-07-25
+YES
+100
+java.sql.SQLSyntaxErrorException: Table 'shopdb.item' doesn't exist
+        at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+        at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+        at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+        at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166)
+        at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101)
+        at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448)
+        at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084)
+        at SmartRetailPro.itemModule(SmartRetailPro.java:91)
+        at SmartRetailPro.main(SmartRetailPro.java:32)
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+1. Add Employee | 2. View Employees
+2
+ID      Name    Address Phone
+100     JAI     VZM     1234
+101     BOBBY   VZM     1212
+102     HASWANTH        VZM     121212
+103     BHARATH SKLM    39273
+104     RATHAN  AKP     362799
+105     HARSHA  VSKP    335336
+106     RAHUL   VSKP    886869
+107     DEVARA  TGP     9748733
+108     RITHEESH        SKLM    2625353
+109     ABHISHEK        UK      76336
+110     MOHITH  TGP     2332344
+111     BHANU   BHEEMLI 959659
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 2
+1. Add Item | 2. View Items
+1
+Enter ID, Name, Expiry(YYYY-MM-DD), Stock_Status, Price: 1
+CHOCOLATE
+2025-12-31
+IN STOCK
+50
+java.sql.SQLSyntaxErrorException: Table 'shopdb.item' doesn't exist
+        at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+        at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+        at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+        at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166)
+        at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101)
+        at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448)
+        at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084)
+        at SmartRetailPro.itemModule(SmartRetailPro.java:91)
+        at SmartRetailPro.main(SmartRetailPro.java:32)
+
+D:\JAVA STUFF\Programming files>javac -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro.java
+SmartRetailPro.java:74: error: reference to Date is ambiguous
+            stmt.setDate(3, Date.valueOf(expiry));
+                            ^
+  both class java.util.Date in java.util and class java.sql.Date in java.sql match
+1 error
+
+D:\JAVA STUFF\Programming files>javac -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro.java
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+Welcome to SmartRetailPro!
+
+==== Main Menu ====
+1. Add Employee
+2. Add Item
+3. Add Customer and Bill
+4. Exit
+Enter choice: 4
+? Thank you and Visit Again!
+
+D:\JAVA STUFF\Programming files>javac -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro.java
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 1
+Enter Employee ID: 112
+Enter Name: JAI
+Enter Address: VZM
+Enter Phone Number: 757575
+? Employee added successfully!
+
+? EMPLOYEE DATA:
+emp_id: 100  name: JAI  address: VZM  phone_number: 1234
+emp_id: 101  name: BOBBY  address: VZM  phone_number: 1212
+emp_id: 102  name: HASWANTH  address: VZM  phone_number: 121212
+emp_id: 103  name: BHARATH  address: SKLM  phone_number: 39273
+emp_id: 104  name: RATHAN  address: AKP  phone_number: 362799
+emp_id: 105  name: HARSHA  address: VSKP  phone_number: 335336
+emp_id: 106  name: RAHUL  address: VSKP  phone_number: 886869
+emp_id: 107  name: DEVARA  address: TGP  phone_number: 9748733
+emp_id: 108  name: RITHEESH  address: SKLM  phone_number: 2625353
+emp_id: 109  name: ABHISHEK  address: UK  phone_number: 76336
+emp_id: 110  name: MOHITH  address: TGP  phone_number: 2332344
+emp_id: 111  name: BHANU  address: BHEEMLI  phone_number: 959659
+emp_id: 112  name: JAI  address: VZM  phone_number: 757575
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 2
+Enter Item Name: 1
+Enter Expiry Date (YYYY-MM-DD): Z
+Enter Price: Z
+java.util.InputMismatchException
+        at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+        at java.base/java.util.Scanner.next(Scanner.java:1619)
+        at java.base/java.util.Scanner.nextDouble(Scanner.java:2590)
+        at SmartRetailPro.handleItems(SmartRetailPro.java:77)
+        at SmartRetailPro.main(SmartRetailPro.java:31)
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 2
+Enter Item Name: APPLE
+Enter Expiry Date (YYYY-MM-DD): 2025-07-31
+Enter Price: 55
+Enter Quantity: 10
+Enter Stock Status (IN STOCK / OUT OF STOCK): IN STOCK
+? Item added successfully!
+
+? ITEMS DATA:
+item_id: 1  name: APPLE  expiry_date: 2025-07-31  price: 55.00  quantity: 10  stock_status: IN STOCK
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 4
+===== Customer Bills =====
+
+? BILLING DATA:
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 4
+===== Customer Bills =====
+
+? BILLING DATA:
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter your choice: 6
+Thank you and visit again!
+
+D:\JAVA STUFF\Programming files>javac -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro.java
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 2
+Enter Item Name: MANGOES
+Enter Expiry Date (YYYY-MM-DD): 2025-08-25
+Enter Price: 85
+Enter Quantity Available: 300
+? Item added successfully!
+
+? DATA FROM: ITEMS
+item_id: 1      name: APPLE     expiry_date: 2025-07-31 price: 55.00    quantity: 10    stock_status: IN STOCK
+item_id: 2      name: MANGOES   expiry_date: 2025-08-25 price: 85.00    quantity: 300   stock_status: IN STOCK
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 2
+Enter Item Name: SUGAR
+Enter Expiry Date (YYYY-MM-DD): 2025-12-31
+Enter Price: 40
+Enter Quantity Available: 350
+? Item added successfully!
+
+? DATA FROM: ITEMS
+item_id: 1      name: APPLE     expiry_date: 2025-07-31 price: 55.00    quantity: 10    stock_status: IN STOCK
+item_id: 2      name: MANGOES   expiry_date: 2025-08-25 price: 85.00    quantity: 300   stock_status: IN STOCK
+item_id: 3      name: SUGAR     expiry_date: 2025-12-31 price: 40.00    quantity: 350   stock_status: IN STOCK
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 2
+Enter Item Name: ATTA
+Enter Expiry Date (YYYY-MM-DD): 2025-09-25
+Enter Price: 200
+Enter Quantity Available: 500
+? Item added successfully!
+
+? DATA FROM: ITEMS
+item_id: 1      name: APPLE     expiry_date: 2025-07-31 price: 55.00    quantity: 10    stock_status: IN STOCK
+item_id: 2      name: MANGOES   expiry_date: 2025-08-25 price: 85.00    quantity: 300   stock_status: IN STOCK
+item_id: 3      name: SUGAR     expiry_date: 2025-12-31 price: 40.00    quantity: 350   stock_status: IN STOCK
+item_id: 4      name: ATTA      expiry_date: 2025-09-25 price: 200.00   quantity: 500   stock_status: IN STOCK
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 2
+Enter Item Name: DAAL
+Enter Expiry Date (YYYY-MM-DD): 2026-12-05
+Enter Price: 45
+Enter Quantity Available: 600
+? Item added successfully!
+
+? DATA FROM: ITEMS
+item_id: 1      name: APPLE     expiry_date: 2025-07-31 price: 55.00    quantity: 10    stock_status: IN STOCK
+item_id: 2      name: MANGOES   expiry_date: 2025-08-25 price: 85.00    quantity: 300   stock_status: IN STOCK
+item_id: 3      name: SUGAR     expiry_date: 2025-12-31 price: 40.00    quantity: 350   stock_status: IN STOCK
+item_id: 4      name: ATTA      expiry_date: 2025-09-25 price: 200.00   quantity: 500   stock_status: IN STOCK
+item_id: 5      name: DAAL      expiry_date: 2026-12-05 price: 45.00    quantity: 600   stock_status: IN STOCK
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: ALMONDS
+java.util.InputMismatchException
+        at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+        at java.base/java.util.Scanner.next(Scanner.java:1619)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
+        at SmartRetailPro.main(SmartRetailPro.java:25)
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 2
+Enter Item Name: ALMONDS
+Enter Expiry Date (YYYY-MM-DD): 2026-11-15
+Enter Price: 100
+Enter Quantity Available: 30
+? Item added successfully!
+
+? DATA FROM: ITEMS
+item_id: 1      name: APPLE     expiry_date: 2025-07-31 price: 55.00    quantity: 10    stock_status: IN STOCK
+item_id: 2      name: MANGOES   expiry_date: 2025-08-25 price: 85.00    quantity: 300   stock_status: IN STOCK
+item_id: 3      name: SUGAR     expiry_date: 2025-12-31 price: 40.00    quantity: 350   stock_status: IN STOCK
+item_id: 4      name: ATTA      expiry_date: 2025-09-25 price: 200.00   quantity: 500   stock_status: IN STOCK
+item_id: 5      name: DAAL      expiry_date: 2026-12-05 price: 45.00    quantity: 600   stock_status: IN STOCK
+item_id: 6      name: ALMONDS   expiry_date: 2026-11-15 price: 100.00   quantity: 30    stock_status: IN STOCK
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 2
+Enter Item Name: CHOCOLATES
+Enter Expiry Date (YYYY-MM-DD): 2025-12-15
+Enter Price: 45
+Enter Quantity Available: 10
+? Item added successfully!
+
+? DATA FROM: ITEMS
+item_id: 1      name: APPLE     expiry_date: 2025-07-31 price: 55.00    quantity: 10    stock_status: IN STOCK
+item_id: 2      name: MANGOES   expiry_date: 2025-08-25 price: 85.00    quantity: 300   stock_status: IN STOCK
+item_id: 3      name: SUGAR     expiry_date: 2025-12-31 price: 40.00    quantity: 350   stock_status: IN STOCK
+item_id: 4      name: ATTA      expiry_date: 2025-09-25 price: 200.00   quantity: 500   stock_status: IN STOCK
+item_id: 5      name: DAAL      expiry_date: 2026-12-05 price: 45.00    quantity: 600   stock_status: IN STOCK
+item_id: 6      name: ALMONDS   expiry_date: 2026-11-15 price: 100.00   quantity: 30    stock_status: IN STOCK
+item_id: 7      name: CHOCOLATES        expiry_date: 2025-12-15 price: 45.00    quantity: 10    stock_status: IN STOCK
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 3
+Enter Customer Name and Mobile: SAI
+7855478547
+Enter Item Name to Purchase: APPLE
+Enter Quantity to Purchase: 5
+? Purchase successful! Total Bill: ?275.0
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 3
+Enter Customer Name and Mobile: SAI
+762376723
+Enter Item Name to Purchase: APPLE
+Enter Quantity to Purchase: 10
+? Not enough stock! Available: 5
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 3
+Enter Customer Name and Mobile: SAI
+3878823
+Enter Item Name to Purchase: MANGOES
+Enter Quantity to Purchase: 50
+? Purchase successful! Total Bill: ?4250.0
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 4
+
+? DATA FROM: BILLING
+bill_id: 1      customer_id: 1  item_id: 1      quantity: 5     total_cost: 275.00
+bill_id: 2      customer_id: 3  item_id: 2      quantity: 50    total_cost: 4250.00
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 5
+Enter Bill ID to verify: 2
+? Bill verified successfully!
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Add Customer Purchase
+4. Generate Bill
+5. Verify Bill
+6. Exit
+Enter choice: 6
+Thank you! Visit again.
+
+D:\JAVA STUFF\Programming files>javac -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro.java
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase
+4. Exit
+Enter choice: 3
+Enter Customer Name: jakes
+Enter Mobile: 5466665
+How many different items?
+4
+Enter Item ID: 1
+Enter Quantity: 2
+Enter Item ID: 3
+Enter Quantity: 50
+Enter Item ID: 4
+Enter Quantity: 100
+Enter Item ID: 5
+Enter Quantity: 6
+
+===== BILL =====
+jakes - 5466665
+APPLE -- 110.0
+SUGAR -- 2000.0
+ATTA -- 20000.0
+DAAL -- 270.0
+TOTAL: Rs.22380.0
+Payment Mode (Cash/Card/PhonePe): phonepe
+
+? Payment received via phonepe. Thank you! Visit again.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase
+4. Exit
+Enter choice: 4
+Thank you! Visit again.

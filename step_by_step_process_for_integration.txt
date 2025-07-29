@@ -1,0 +1,91 @@
+Microsoft Windows [Version 10.0.26100.4652]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\JAVA STUFF>javac MySQLConnect.java
+
+D:\JAVA STUFF>java MySQLConnect.java
+?? JDBC Driver not found.
+java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+        at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+        at jdk.compiler/com.sun.tools.javac.launcher.MemoryClassLoader.loadClass(MemoryClassLoader.java:125)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+        at java.base/java.lang.Class.forName0(Native Method)
+        at java.base/java.lang.Class.forName(Class.java:463)
+        at java.base/java.lang.Class.forName(Class.java:454)
+        at MySQLConnect.main(MySQLConnect.java:13)
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+        at jdk.compiler/com.sun.tools.javac.launcher.SourceLauncher.execute(SourceLauncher.java:254)
+        at jdk.compiler/com.sun.tools.javac.launcher.SourceLauncher.run(SourceLauncher.java:138)
+        at jdk.compiler/com.sun.tools.javac.launcher.SourceLauncher.main(SourceLauncher.java:76)
+
+D:\JAVA STUFF>java MySQLConnect.java
+?? JDBC Driver not found.
+java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+        at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+        at jdk.compiler/com.sun.tools.javac.launcher.MemoryClassLoader.loadClass(MemoryClassLoader.java:125)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+        at java.base/java.lang.Class.forName0(Native Method)
+        at java.base/java.lang.Class.forName(Class.java:463)
+        at java.base/java.lang.Class.forName(Class.java:454)
+        at MySQLConnect.main(MySQLConnect.java:13)
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+        at jdk.compiler/com.sun.tools.javac.launcher.SourceLauncher.execute(SourceLauncher.java:254)
+        at jdk.compiler/com.sun.tools.javac.launcher.SourceLauncher.run(SourceLauncher.java:138)
+        at jdk.compiler/com.sun.tools.javac.launcher.SourceLauncher.main(SourceLauncher.java:76)
+
+D:\JAVA STUFF>javac -cp .;mysql-connector-java-8.0.xx.jar MySQLConnect.java
+
+D:\JAVA STUFF>javac -cp .;mysql-connector-j-9.4.0.jar MySQLConnect.java
+
+D:\JAVA STUFF>java -cp .;mysql-connector-j-9.4.0.jar MySQLConnect
+? Successfully connected to MySQL database!
+
+D:\JAVA STUFF>javac -cp .;mysql-connector-j-9.4.0.jar MySQLConnect.java
+MySQLConnect.java:7: error: class EmployeeDetailsFetcher is public, should be declared in a file named EmployeeDetailsFetcher.java
+public class EmployeeDetailsFetcher {
+       ^
+1 error
+
+D:\JAVA STUFF>javac -cp .;mysql-connector-j-9.4.0.jar MySQLConnect.java
+
+D:\JAVA STUFF>java -cp .;mysql-connector-j-9.4.0.jar MySQLConnect
+?? Database connection/query error.
+java.sql.SQLSyntaxErrorException: Unknown database 'company'
+        at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+        at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+        at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839)
+        at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415)
+        at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+        at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+        at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+        at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:199)
+        at MySQLConnect.main(MySQLConnect.java:19)
+
+D:\JAVA STUFF>javac -cp .;mysql-connector-j-9.4.0.jar MySQLConnect.java
+
+D:\JAVA STUFF>java -cp .;mysql-connector-j-9.4.0.jar MySQLConnect
+? Connected to MySQL 'company' database.
+? Employee Details:
+
+Emp ID: 121
+Name: john
+Manager ID: 321
+Date of Joining: 2019-01-31
+City: vizag
+----------------------------
+Emp ID: 321
+Name: white
+Manager ID: 986
+Date of Joining: 2020-01-30
+City: delhi
+----------------------------
+Emp ID: 421
+Name: rana
+Manager ID: 876
+Date of Joining: 2021-11-27
+City: chennai
+----------------------------
