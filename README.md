@@ -159,19 +159,15 @@ OpenCV (via webcam) triggers facial login
 
 ## 📊 Smart Features Recap
 
-Feature	                                  Trigger	                                Impact
+| **Feature**           | **Trigger**                         | **Impact**                        |
+| --------------------- | ----------------------------------- | --------------------------------- |
+| Loyalty Discount      | `visit_count ≥ 7`                   | 10% extra discount                |
+| Weekend Discount      | `day_of_week = Saturday/Sunday`     | 5% daily discount                 |
+| Low Stock Alert       | `item.quantity ≤ 10`                | Alert shown on employee dashboard |
+| Restocking Suggestion | Most sold item auto-detected        | Employee prompted to reorder      |
+| Revenue Logging       | Every bill generates revenue record | For daily revenue tracking        |
+| OTP Login (Customer)  | Simulated using random 4-digit code | Ensures basic login security      |
 
-Loyalty Discount	                     visit_count ≥ 7	                        10% extra discount
-
-Weekend Discount	                 day_of_week = Saturday/Sunday	             5% daily discount
-
-Low Stock Alert	                     item.quantity ≤ 10	                   Alert shown on employee dashboard
-
-Restocking Suggestion             Most sold item auto-detected	         Employee prompted to reorder
-
-Revenue Logging	               Every bill generates revenue record            For daily revenue tracking
-
-OTP Login (Customer)	         Simulated using random 4-digit code	           Ensures basic login security
 
 
 ## 📈 Sample Output
@@ -208,18 +204,17 @@ Customer profiles with purchase history
 
 ## 🌟 Why SmartRetailPro?
 
-✅ Real Problems, Real Solutions:
+| **Retail Problem**                    | **How SmartRetailPro Solves It**                          |
+| ------------------------------------- | --------------------------------------------------------- |
+| Repeated customer details every visit | Remembers customers and tracks visits & spending          |
+| Stockouts or overstocking             | Auto alerts when stock is low + most sold item restocking |
+| Manual, inconsistent billing          | GST breakdown, dynamic discounts, loyalty rewards         |
+| Employee access control               | Secure login via ID/password + optional face recognition  |
+| Poor customer retention               | Loyalty program with visit-based discounts                |
+| Weekend offers & promotional pricing  | Dynamic discounts on weekends integrated into system      |
+| No daily sales insight                | Daily revenue with timestamp and weekday tracking         |
+| Error-prone inventory updates         | GUI-based item add/edit with expiry tracking              |
 
-**Retail Problem**	                                            **How SmartRetailPro Solves It**
-
-Repeated customer details every visit	              Remembers customers and tracks visits & spending
-Stockouts or overstocking	                        Auto alerts when stock is low + most sold item restocking
-Manual, inconsistent billing	                      GST breakdown, dynamic discounts, loyalty rewards
-Employee access control	                           Secure login via ID/password + optional face recognition
-Poor customer retention	                                Loyalty program with visit-based discounts
-Weekend offers & promotional pricing	              Dynamic discounts on weekends integrated into system
-No daily sales insight	                            Daily revenue with timestamp and weekday tracking
-Error-prone inventory updates	                         GUI-based item add/edit with expiry tracking
 
 # 💡 Key Design Principles
 
