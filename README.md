@@ -208,11 +208,3 @@ Stock reorder API integration
 
 Customer profiles with purchase history
 
-## 🤝 Contributing
-Contributions are welcome! Feel free to:
-
-Report bugs
-
-Request features
-
-Fork and improve the interface
