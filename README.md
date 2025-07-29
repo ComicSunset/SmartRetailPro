@@ -140,20 +140,18 @@ Edit
 ## ⚙️ Compilation & Run Guide (Windows CMD)
 
 ### 🔨 Step 1: Set Paths
-```bash
+
 set PATH_TO_FX="D:\JAVA STUFF\javafx-sdk-24.0.2\lib"
 set MYSQL_JAR="D:\JAVA STUFF\mysql-connector-j-9.4.0.jar"
 📦 Step 2: Compile Code
-bash
-Copy
-Edit
 javac --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml -cp ".;%MYSQL_JAR%" SmartRetailPro.java Main.java
+
 ▶️ Step 3: Run Application
-bash
-Copy
-Edit
+
 java --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml -cp ".;%MYSQL_JAR%" Main
-📸 Face Recognition (Employee Login)
+
+# 📸 Face Recognition (Employee Login)
+
 Store employee images in face_data/
 
 Employee's face will be matched with trained data
@@ -162,16 +160,23 @@ OpenCV (via webcam) triggers facial login
 
 💡 Uses EigenFaceRecognizer from OpenCV with real-time frame processing
 
-📊 Smart Features Recap
+## 📊 Smart Features Recap
+
 Feature	Trigger	Impact
+
 Loyalty Discount	visit_count ≥ 7	10% extra discount
+
 Weekend Discount	day_of_week = Saturday/Sunday	5% daily discount
+
 Low Stock Alert	item.quantity ≤ 10	Alert shown on employee dashboard
+
 Restocking Suggestion	Most sold item auto-detected	Employee prompted to reorder
+
 Revenue Logging	Every bill generates revenue record	For daily revenue tracking
+
 OTP Login (Customer)	Simulated using random 4-digit code	Ensures basic login security
 
-📈 Sample Output
+## 📈 Sample Output
 💬 "Welcome to EngineersMart!!"
 
 ➡️ Role: Customer or Employee
@@ -192,7 +197,7 @@ Final bill: Loyalty + Daily + GST breakdown
 
 Mode of payment + Thank you note
 
-📌 Future Enhancements
+## 📌 Future Enhancements
 Cloud-based MySQL deployment (AWS RDS)
 
 Email/SMS billing receipts
@@ -203,7 +208,7 @@ Stock reorder API integration
 
 Customer profiles with purchase history
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Feel free to:
 
 Report bugs
