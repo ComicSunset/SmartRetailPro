@@ -1,0 +1,378 @@
+Microsoft Windows [Version 10.0.26100.4770]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\JAVA STUFF\Programming files>javac -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro.java
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase
+4. Exit
+Enter choice: 1
+1. Add Employee
+2. View Employees
+2
+ID      Name    Address Phone
+100     JAI     VZM     1234
+101     BOBBY   VZM     1212
+102     HASWANTH        VZM     121212
+103     BHARATH SKLM    39273
+104     RATHAN  AKP     362799
+105     HARSHA  VSKP    335336
+106     RAHUL   VSKP    886869
+107     DEVARA  TGP     9748733
+108     RITHEESH        SKLM    2625353
+109     ABHISHEK        UK      76336
+110     MOHITH  TGP     2332344
+111     BHANU   BHEEMLI 959659
+112     JAI     VZM     757575
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase
+4. Exit
+Enter choice: 3
+1. Manual Entry
+2. Customer Item List
+2
+Enter Customer Name: jaikrishna
+Enter Mobile: 45555544
+How many items customer wants to buy? 5
+Enter Item Name: sugar
+Enter Quantity: 33
+Enter Item Name: atta
+Enter Quantity: 76
+Enter Item Name: chocolate
+Enter Quantity: 15
+? Item not found: chocolate
+Enter Item Name: mangoes
+Enter Quantity: 444
+?? Not enough stock for MANGOES
+Enter Item Name: mangoes
+Enter Quantity: 4
+
+===== BILL =====
+jaikrishna - 45555544
+SUGAR -- 33 x 40.0 = 1320.0
+ATTA -- 76 x 200.0 = 15200.0
+MANGOES -- 4 x 85.0 = 340.0
+TOTAL: Rs.16860.0
+Payment Mode (Cash/Card/PhonePe): cash
+
+? Payment received via cash. Thank you! Visit again.
+
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase
+4. Exit
+Enter choice: 2
+1. Add Item
+2. View Items
+2
+ID      Name    Expiry  Price   Qty     Status
+1       APPLE   2025-07-31      55.0    3       IN STOCK
+2       MANGOES 2025-08-25      85.0    246     IN STOCK
+3       SUGAR   2025-12-31      40.0    267     IN STOCK
+4       ATTA    2025-09-25      200.0   324     IN STOCK
+5       DAAL    2026-12-05      45.0    594     IN STOCK
+6       ALMONDS 2026-11-15      100.0   30      IN STOCK
+7       CHOCOLATES      2025-12-15      45.0    10      IN STOCK
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase
+4. Exit
+Enter choice: 4
+Thank you! Visit again.
+
+D:\JAVA STUFF\Programming files>javac -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro.java
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase
+4. Exit
+Enter choice: 4
+? Thank you! Visit again.
+
+D:\JAVA STUFF\Programming files>javac -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro.java
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: 2
+1. Add Item
+2. View Items
+2
+ID      Name    Expiry  Price   Qty     Status
+1       APPLE   2025-07-31      55.0    3       IN STOCK
+2       MANGOES 2025-08-25      85.0    246     IN STOCK
+3       SUGAR   2025-12-31      40.0    267     IN STOCK
+4       ATTA    2025-09-25      200.0   324     IN STOCK
+5       DAAL    2026-12-05      45.0    594     IN STOCK
+6       ALMONDS 2026-11-15      100.0   30      IN STOCK
+7       CHOCOLATES      2025-12-15      45.0    10      IN STOCK
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: 2
+1. Add Item
+2. View Items
+1
+Enter Item Name: chips
+Enter Expiry (YYYY-MM-DD): 2025-12-31
+Enter Price: 20
+Enter Quantity (KGs or Units): 50
+Item added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: 2
+1. Add Item
+2. View Items
+1
+Enter Item Name: drinks
+Enter Expiry (YYYY-MM-DD): 2025-12-30
+Enter Price: 200
+Enter Quantity (KGs or Units): 50
+Item added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: 2
+1. Add Item
+2. View Items
+1
+Enter Item Name: soaps
+Enter Expiry (YYYY-MM-DD): 2026-12-31
+Enter Price: 250
+Enter Quantity (KGs or Units): 100
+Item added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: milk and curd
+java.util.InputMismatchException
+        at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+        at java.base/java.util.Scanner.next(Scanner.java:1619)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
+        at SmartRetailPro.main(SmartRetailPro.java:23)
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: 2
+1. Add Item
+2. View Items
+1
+Enter Item Name: milk and curd
+Enter Expiry (YYYY-MM-DD): 2025-0-31
+Enter Price: 25
+Enter Quantity (KGs or Units): 400
+java.lang.IllegalArgumentException
+        at java.sql/java.sql.Date.valueOf(Date.java:141)
+        at SmartRetailPro.itemModule(SmartRetailPro.java:82)
+        at SmartRetailPro.main(SmartRetailPro.java:28)
+
+D:\JAVA STUFF\Programming files>java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: 2
+1. Add Item
+2. View Items
+1
+Enter Item Name: milk and curd
+Enter Expiry (YYYY-MM-DD): 2025-08-31
+Enter Price: 25
+Enter Quantity (KGs or Units): 400
+Item added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: 2
+1. Add Item
+2. View Items
+1
+Enter Item Name: teapowder
+Enter Expiry (YYYY-MM-DD): 2026-08-31
+Enter Price: 250
+Enter Quantity (KGs or Units): 500
+Item added.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: 2
+1. Add Item
+2. View Items
+2
+ID      Name    Expiry  Price   Qty     Status
+1       APPLE   2025-07-31      55.0    3       IN STOCK
+2       MANGOES 2025-08-25      85.0    246     IN STOCK
+3       SUGAR   2025-12-31      40.0    267     IN STOCK
+4       ATTA    2025-09-25      200.0   324     IN STOCK
+5       DAAL    2026-12-05      45.0    594     IN STOCK
+6       ALMONDS 2026-11-15      100.0   30      IN STOCK
+7       CHOCOLATES      2025-12-15      45.0    10      IN STOCK
+8       chips   2025-12-31      20.0    50      IN STOCK
+9       drinks  2025-12-30      200.0   50      IN STOCK
+10      soaps   2026-12-31      250.0   100     IN STOCK
+11      milk and curd   2025-08-31      25.0    400     IN STOCK
+12      teapowder       2026-08-31      250.0   500     IN STOCK
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: 3
+Enter Customer Name: harsha
+Enter Mobile: 5555
+How many different items? 3
+Enter Item ID: 11
+Enter Quantity: 12
+Remaining Quantity of milk and curd: 388
+Enter Item ID: 12
+Enter Quantity: 20
+Remaining Quantity of teapowder: 480
+Enter Item ID: 4
+Enter Quantity: 2
+Remaining Quantity of ATTA: 322
+
+===== BILL =====
+harsha - 5555
+milk and curd -- Rs.300.0
+teapowder -- Rs.5000.0
+ATTA -- Rs.400.0
+TOTAL: Rs.5700.0
+Payment Mode (Cash/Card/PhonePe): cash
+
+? Payment received via cash. Thank you! Visit again.
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: 2
+1. Add Item
+2. View Items
+2
+ID      Name    Expiry  Price   Qty     Status
+1       APPLE   2025-07-31      55.0    3       IN STOCK
+2       MANGOES 2025-08-25      85.0    246     IN STOCK
+3       SUGAR   2025-12-31      40.0    267     IN STOCK
+4       ATTA    2025-09-25      200.0   322     IN STOCK
+5       DAAL    2026-12-05      45.0    594     IN STOCK
+6       ALMONDS 2026-11-15      100.0   30      IN STOCK
+7       CHOCOLATES      2025-12-15      45.0    10      IN STOCK
+8       chips   2025-12-31      20.0    50      IN STOCK
+9       drinks  2025-12-30      200.0   50      IN STOCK
+10      soaps   2026-12-31      250.0   100     IN STOCK
+11      milk and curd   2025-08-31      25.0    388     IN STOCK
+12      teapowder       2026-08-31      250.0   480     IN STOCK
+
+===== SmartRetailPro Menu =====
+1. Add/View Employee
+2. Add/View Items
+3. Customer Purchase (Manual)
+4. Customer Purchase (List Based)
+5. Exit
+Enter choice: 4
+Enter Customer Name: s
+Enter Mobile: s
+Enter how many items customer requested: s
+java.util.InputMismatchException
+        at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+        at java.base/java.util.Scanner.next(Scanner.java:1619)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
+        at SmartRetailPro.customerBillingByList(SmartRetailPro.java:194)
+        at SmartRetailPro.main(SmartRetailPro.java:30)
+
+D:\JAVA STUFF\Programming files>
+
+
+-----this is for the java+sql compiling 
+
+javac -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro.java
+java -cp .;mysql-connector-j-9.4.0.jar SmartRetailPro
+
+
+----this is for javafx
+
+javac --module-path "D:\JAVA STUFF\openjfx-24.0.2_windows-x64_bin-sdk\javafx-sdk-24.0.2\lib" --add-modules javafx.controls HelloFX.java
+java --module-path "D:\JAVA STUFF\openjfx-24.0.2_windows-x64_bin-sdk\javafx-sdk-24.0.2\lib" --add-modules javafx.controls HelloFX
+
+------
+"D:\JAVA STUFF\Programming files\opencv\build\java\opencv-4120.jar"
+D:\JAVA STUFF\openjfx-24.0.2_windows-x64_bin-sdk\javafx-sdk-24.0.2\lib
+"D:\JAVA STUFF\Programming files\opencv\build\java\x64\opencv_java4120.dll"
+"D:\JAVA STUFF\Programming files\mysql-connector-j-9.4.0.jar"
+
+--------------
+javac --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml -cp .;%MYSQL_JAR% Main.java SmartRetailPro.java
+java --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml -cp .;%MYSQL_JAR% Main
+
+
+----
+set PATH_TO_FX="D:\JAVA STUFF\Programming files\javafx-sdk-24.0.2\lib"
+set MYSQL_JAR="D:\JAVA STUFF\Programming files\mysql-connector-j-8.3.0.jar"
+
+---------------------------
+set PATH_TO_FX="D:\JAVA STUFF\Programming files\openjfx-24.0.2_windows-x64_bin-sdk\javafx-sdk-24.0.2\lib"
+set MYSQL_JAR="D:\JAVA STUFF\Programming files\mysql-connector-j-9.4.0.jar"
+
+
+javac --module-path "D:\JAVA STUFF\Programming files\openjfx-24.0.2_windows-x64_bin-sdk\javafx-sdk-24.0.2\lib" --add-modules javafx.controls,javafx.fxml -cp ".;D:\JAVA STUFF\Programming files\mysql-connector-j-9.4.0.jar" Main.java SmartRetailPro.java
+
+java --module-path "D:\JAVA STUFF\Programming files\openjfx-24.0.2_windows-x64_bin-sdk\javafx-sdk-24.0.2\lib" --add-modules javafx.controls,javafx.fxml -cp ".;D:\JAVA STUFF\Programming files\mysql-connector-j-9.4.0.jar" Main
