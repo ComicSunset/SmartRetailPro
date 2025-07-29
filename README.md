@@ -4,134 +4,210 @@
 
 Welcome to **SmartRetailPro** – a powerful and intelligent 💡 Java + MySQL or Oracle PL/SQL-based console application that transforms how small businesses handle employees, inventory, customer billing, and stock verification – all in one seamless flow! ⚙️📊
 
----
+## ✨ Project Highlights
 
-## ✨ Highlights
-
-👨‍💼 ***Employee Module***
-
-➕ Add new employees with ID, name, address, and phone
-
-🔍 View list of all employees in tabular format
-
-📦 ***Inventory (Item) Module***
-
-➕ Add new items with name, expiry date, price, and quantity
-
-📊 Tracks quantity and automatically updates stock status (IN STOCK or OUT)
-
-🚨 Shows low stock alerts if quantity falls below threshold
-
-🧾 ***Customer Billing Module***
-
-🟢 **Mode 1**: Manual Purchase Entry
-Takes customer name & mobile once
-
-Allows adding multiple items with quantity
-
-Validates stock and updates remaining quantity
-
-Shows bill summary with item-wise cost
-
-Shows remaining stock and alerts if low
-
-Prompts for payment mode (Cash/Card/PhonePe)
-
-🔵** Mode 2**: Customer List Purchase
-Accepts predefined item list from customer
-
-Validates available stock automatically
-
-Calculates total bill & updates DB in background
-
-📈 ***Customer Spend Tracker****
-View full table of customers with:
-
-👤 Name
-
-📱 Mobile number
-
-💰 Total amount spent across purchases
-
- 
----
-
-## 🛠️ Tech Stack
-
-| 🔧 Tech         | ⚡ Description             |
-|-----------------|----------------------------|
-| `Java`          | Backend logic using JDBC + OOP |
-| `MySQL/Oracle PL/sql`         | Relational DB for all data |
-| `JDBC`          | Java Database Connectivity |
-| `Scanner`       | CLI input from the user    |
+| Feature                          | Description                                                                 |
+|----------------------------------|-----------------------------------------------------------------------------|
+| JavaFX GUI                       | Intuitive interface for both customer and employee workflows                |
+| Customer Portal                  | Secure OTP-based login, shopping cart, dynamic discounts, and GST billing   |
+| Employee Portal                  | Face or password login, item inventory control, customer/revenue tracking   |
+| Loyalty & Daily Discounts        | Smart discount engine based on visit frequency and day of the week          |
+| GST + Stock Automation           | Full billing with GST, low stock alerts, restocking suggestion              |
+| Java + JDBC + MySQL Integration  | Clean backend logic, stable SQL operations, modular MVC structure           |
 
 ---
 
-## 📂 Database Overview
+## 🧰 Tech Stack
 
-Your database is called `shopdb` and consists of the following tables:
-
-- 👨‍💼 `employee`: Stores employee details (ID, name, address, phone)
-- 📦 `items`: Stores item info (ID, name, expiry, stock, price)
-- 👤 `customers`: Stores customer details (name, phone)
-- 🧾 `billing`: Maps customer purchases with total and item breakdown
-
----
-
-## ⚙️ Installation & Setup
-
-### ✅ Prerequisites:
-
-Before running this project, make sure you have the following installed:
-
-- ☕ **Java JDK (v21 or above)** – for compiling and running the application
-- 🐬 **MySQL Server** – for database backend
-- 🧠 **Oracle 23ai** *(optional)* – for advanced analytics/integration
-- 🐳 **Docker** *(optional)* – to containerize and run your app/db environment
-- 💡 **MySQL Connector/J** – JDBC driver to connect Java with MySQL
+| Layer            | Tools Used                            |
+|------------------|----------------------------------------|
+| Frontend (GUI)   | JavaFX                                 |
+| Backend (Logic)  | Java, JDBC                             |
+| Database         | MySQL                                  |
+| Facial Login     | OpenCV (JavaCV bindings)               |
+| OTP Simulation   | Java (random + timer simulation)       |
+| Charts/Reports   | JavaFX Charts (for customer spend)     |
 
 ---
 
-🧠 **Java Concepts & SQL Used**
+## 🎯 User Roles & Capabilities
 
-💡 Concept
+### 🧑‍💻 **Customer Features**
+- Login via **Name + Phone + OTP simulation**
+- Browse all items in inventory
+- Add multiple items to **Cart**
+- Real-time **quantity updates**
+- Automatic **GST breakup (CGST + SGST)**
+- **Loyalty Discount** if visits ≥ 7 times (10% off)
+- **Daily Discounts** (extra 5% off on weekends)
+- **Bill Summary + Payment Mode** (Cash, Card, UPI)
+- Final **Thank You** message with detailed bill
 
-OOP (Methods/Classes) --->>	Modular code structure
+---
 
-JDBC API	--->> Database operations
+### 👨‍💼 **Employee Features**
+- Login via:
+  - ✅ Employee ID + Password (MySQL verified)
+  - ✅ **Face Recognition** via OpenCV
+- Add items (with Name, Price, Quantity, Expiry)
+- View complete inventory list
+- Get **Low Stock Alerts** (when qty ≤ 10)
+- View **Most Sold Item Suggestions** (for restock)
+- Access **Customer Spend Summary Table**
+- View **Daily Revenue** (with timestamp and weekday)
 
-Collection Framework	--->> Billing and summary storage
+---
 
-Conditional Statements --->>	 Stock checks, status flags
+## 🗃️ Database Schema (`shopdb`)
 
-Loops	--->> Menu handling, multiple item input
+> Make sure to create the following tables in MySQL before running the application.
 
-SQL Joins & Aggregations --->> Customer total spend analytics
+### Tables:
 
-Exception Handling	--->> Runtime safety
+#### 1. `employee`
+| Column     | Type        |
+|------------|-------------|
+| id         | INT (PK)    |
+| name       | VARCHAR     |
+| address    | VARCHAR     |
+| phone      | VARCHAR     |
+| password   | VARCHAR     |
+| face_id    | VARCHAR     |
 
-Static & Final --->> Constants and single Scanner instance
+#### 2. `items`
+| Column     | Type        |
+|------------|-------------|
+| id         | INT (PK)    |
+| name       | VARCHAR     |
+| expiry_date| DATE        |
+| price      | DOUBLE      |
+| quantity   | INT         |
+| status     | VARCHAR     |
 
-## 🌟 Why SmartRetailPro?
+#### 3. `customers`
+| Column     | Type        |
+|------------|-------------|
+| id         | INT (PK)    |
+| name       | VARCHAR     |
+| phone      | VARCHAR     |
+| visit_count| INT         |
+| total_spent| DOUBLE      |
 
-⚡ Superfast CLI interface for real-time billing
+#### 4. `billing`
+| Column     | Type        |
+|------------|-------------|
+| bill_id    | INT (PK)    |
+| customer_id| INT (FK)    |
+| item_id    | INT (FK)    |
+| qty        | INT         |
+| subtotal   | DOUBLE      |
+| date       | TIMESTAMP   |
 
-🔄 Two billing methods for flexibility
+#### 5. `daily_revenue`
+| Column     | Type        |
+|------------|-------------|
+| id         | INT (PK)    |
+| amount     | DOUBLE      |
+| timestamp  | TIMESTAMP   |
+| day_of_week| VARCHAR     |
 
-🔍 Intelligent stock monitoring
+---
 
-🧾 Clean and detailed bill generation
+## 🔧 Installation Instructions
 
-💰 Tracks lifetime spending per customer
+### 🖥️ Prerequisites
+- ✅ JDK 21 or higher
+- ✅ MySQL Server running (`localhost:3306`)
+- ✅ JavaFX SDK installed (e.g., `javafx-sdk-24.0.2`)
+- ✅ MySQL Connector/J `.jar` file (e.g., `mysql-connector-j-9.4.0.jar`)
+- ✅ OpenCV + JavaCV installed for face login
 
-🎯 Resume-friendly and recruiter-attracting
+### 📁 File Structure
+📁 SmartRetailPro/
+├── SmartRetailPro.java (Backend Java logic)
+├── Main.java (JavaFX GUI + logic)
+├── face_data/ (Captured face images)
+├── sql/
+│ └── create_tables.sql (SQL schema for MySQL)
+├── README.md
 
-## 📌 Future Scope
+yaml
+Copy
+Edit
 
-GUI with JavaFX or Swing
+---
 
-REST API layer with Spring Boot
+## ⚙️ Compilation & Run Guide (Windows CMD)
 
-Barcode scanning & inventory audit module
+### 🔨 Step 1: Set Paths
+```bash
+set PATH_TO_FX="D:\JAVA STUFF\javafx-sdk-24.0.2\lib"
+set MYSQL_JAR="D:\JAVA STUFF\mysql-connector-j-9.4.0.jar"
+📦 Step 2: Compile Code
+bash
+Copy
+Edit
+javac --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml -cp ".;%MYSQL_JAR%" SmartRetailPro.java Main.java
+▶️ Step 3: Run Application
+bash
+Copy
+Edit
+java --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml -cp ".;%MYSQL_JAR%" Main
+📸 Face Recognition (Employee Login)
+Store employee images in face_data/
 
-Daily sales reports generation (CSV, PDF)
+Employee's face will be matched with trained data
+
+OpenCV (via webcam) triggers facial login
+
+💡 Uses EigenFaceRecognizer from OpenCV with real-time frame processing
+
+📊 Smart Features Recap
+Feature	Trigger	Impact
+Loyalty Discount	visit_count ≥ 7	10% extra discount
+Weekend Discount	day_of_week = Saturday/Sunday	5% daily discount
+Low Stock Alert	item.quantity ≤ 10	Alert shown on employee dashboard
+Restocking Suggestion	Most sold item auto-detected	Employee prompted to reorder
+Revenue Logging	Every bill generates revenue record	For daily revenue tracking
+OTP Login (Customer)	Simulated using random 4-digit code	Ensures basic login security
+
+📈 Sample Output
+💬 "Welcome to EngineersMart!!"
+
+➡️ Role: Customer or Employee
+
+💻 If Employee:
+
+Face or ID+Password login
+
+Dashboard: Add/View Items, Alerts, Spend Table
+
+🛍️ If Customer:
+
+OTP login
+
+Cart interface
+
+Final bill: Loyalty + Daily + GST breakdown
+
+Mode of payment + Thank you note
+
+📌 Future Enhancements
+Cloud-based MySQL deployment (AWS RDS)
+
+Email/SMS billing receipts
+
+Barcode scanning for item entry
+
+Stock reorder API integration
+
+Customer profiles with purchase history
+
+🤝 Contributing
+Contributions are welcome! Feel free to:
+
+Report bugs
+
+Request features
+
+Fork and improve the interface
